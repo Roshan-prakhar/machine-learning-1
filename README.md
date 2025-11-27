@@ -1,85 +1,48 @@
-🧠 Time Series Forecasting using Deep Learning
+<h1 align="center">🧠 Time Series Forecasting using Deep Learning</h1>
 
-A deep learning–based approach to forecasting temporal data using MLP, CNN, LSTM, and hybrid CNN-LSTM architectures.
+<p align="center">
+  <b>Predicting future trends with MLP, CNN, LSTM, and hybrid CNN-LSTM models</b>  
+  <br/>
+  <a href="https://github.com/Roshan-prakhar/machine-learning-1/stargazers">
+    <img src="https://img.shields.io/github/stars/Roshan-prakhar/machine-learning-1?style=social" alt="GitHub Stars">
+  </a>
+  <a href="https://github.com/Roshan-prakhar/machine-learning-1/network/members">
+    <img src="https://img.shields.io/github/forks/Roshan-prakhar/machine-learning-1?style=social" alt="GitHub Forks">
+  </a>
+  <a href="https://github.com/Roshan-prakhar/machine-learning-1">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT">
+  </a>
+</p>
 
-📘 Overview
+---
 
-This project focuses on building and comparing multiple deep learning models for time series forecasting.
-It aims to capture temporal dependencies, trends, and seasonality using modern neural network architectures.
+## 📘 Overview
+This project demonstrates how **deep learning architectures** can be applied to **time series forecasting** tasks.  
+It compares multiple models — **MLP, CNN, LSTM, and CNN-LSTM hybrids** — to predict future sales based on historical data trends and seasonality.
 
-The models are evaluated using real-world sales data from Kaggle competitions, with metrics like RMSE and MAPE.
+---
 
-🗂️ Dataset
+## 🗂️ Dataset
+The models were trained on publicly available Kaggle datasets:
 
-The following datasets were used for experimentation:
+- [Predict Future Sales](https://www.kaggle.com/c/competitive-data-science-predict-future-sales)
+- [Store Item Demand Forecasting Challenge](https://www.kaggle.com/c/demand-forecasting-kernels-only)
 
-Predict Future Sales (Kaggle)
+**Data Period:** `2013-01-01 → 2017-12-31`
 
-Store Item Demand Forecasting Challenge
+| Feature | Description |
+|----------|--------------|
+| `shop_id` | Unique identifier for a shop |
+| `item_id` | Unique identifier for a product |
+| `item_cnt_day` | Number of items sold per day |
+| `item_price` | Current price of the item |
+| `date` | Date of sale |
+| `date_block_num` | Month index (Jan 2013 = 0) |
 
-Data Fields:
+---
 
-Field	Description
-shop_id	Unique identifier of shop
-item_id	Unique identifier of product
-item_cnt_day	Number of products sold
-item_price	Current price of an item
-date	Sale date (dd/mm/yyyy)
-date_block_num	Month number (Jan 2013 = 0)
+## ⚙️ Implementation Details
 
-🕒 Time Range: 2013-01-01 → 2017-12-31
-
-⚙️ Implementation
-
-Libraries Used:
-
-NumPy, Pandas, TensorFlow, Scikit-learn, Matplotlib, Seaborn
-
-
-Model Architectures Implemented:
-
-🔹 Multilayer Perceptron (MLP) – baseline dense model
-
-🔹 CNN Model – captures short-term dependencies
-
-🔹 LSTM Model – captures sequential patterns and long-term memory
-
-🔹 CNN-LSTM Hybrid – combines spatial and temporal feature learning
-
-📊 Model Performance
-Model	Train RMSE	Validation RMSE
-MLP	18.36	18.50
-CNN	18.62	18.76
-LSTM	19.98	18.76
-CNN-LSTM	19.20	19.17
-📈 Visualizations
-
-Visual exploration includes:
-
-Daily sales trends
-
-Item-level and store-level sales analysis
-
-Model comparison charts
-
-(Add your image links here if available, e.g. /output/sales_trend.png)
-
-🧩 Lessons Learned
-
-Handling seasonality and trends in time series
-
-Feature engineering using window-based sampling
-
-Comparative study of deep learning architectures for forecasting
-
-Use of RMSE/MAPE metrics to evaluate performance
-
-👤 Author
-
-Roshan Prakhar
-📍 Ranchi, Jharkhand, India
-📧 roshanprakhar@gmail.com
-
-🌐 Portfolio
- • LinkedIn
- • GitHub
+**Languages & Libraries**
+```python
+Python, NumPy, Pandas, TensorFlow, Scikit-learn, Matplotlib, Seaborn
